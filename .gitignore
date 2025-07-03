@@ -1,0 +1,28 @@
+# Files không cần push lên GitHub
+*.zip
+QUICK-SETUP.md
+github-setup-guide.md
+COMPLETED.md
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Mac
+.DS_Store
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# IDE files
+.vscode/
+.idea/
+
+# Node modules (nếu có)
+node_modules/
+
+# Backup files
+*.bak
+*.backup 

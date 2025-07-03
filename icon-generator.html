@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Dream Bokeh - Icon Generator</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        .icon-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .icon-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .icon-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .icon-preview {
+            width: 128px;
+            height: 128px;
+            margin: 0 auto 20px;
+            border-radius: 20px;
+            background: linear-gradient(45deg, #4a90e2, #7bb3f0);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .icon-preview::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255, 255, 255, 0.3) 0%, transparent 70%);
+            animation: bokeh 3s ease-in-out infinite;
+        }
+
+        @keyframes bokeh {
+            0%, 100% { transform: translate(-50%, -50%) scale(0.8); }
+            50% { transform: translate(-30%, -30%) scale(1.2); }
+        }
+
+        .icon-size {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .icon-description {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-bottom: 20px;
+        }
+
+        .download-btn {
+            background: rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .download-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1.05);
+        }
+
+        .instructions {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 30px;
+            margin: 40px 0;
+            text-align: left;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .instructions h3 {
+            color: #87CEEB;
+            margin-bottom: 15px;
+        }
+
+        .instructions ol {
+            line-height: 1.8;
+        }
+
+        .canvas-container {
+            display: none;
+        }
+
+        .generator-info {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px 0;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 0.9rem;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌟 Blue Dream Bokeh - Icon Generator</h1>
+        <p class="subtitle">Tự động tạo icon cho extension Blue Dream Bokeh New Tab Theme</p>
+
+        <div class="generator-info">
+            <h3>📋 Thông tin Extension</h3>
+            <p><strong>Tên:</strong> Blue Dream Bokeh New Tab Theme</p>
+            <p><strong>Phiên bản:</strong> 1.0.0</p>
+            <p><strong>Developer:</strong> XMP</p>
+            <p><strong>Ngày tạo:</strong> 07/03/2025</p>
+        </div>
+
+        <div class="icon-grid">
+            <div class="icon-card">
+                <div class="icon-preview" id="icon16">
+                    🌌
+                </div>
+                <div class="icon-size">16x16</div>
+                <div class="icon-description">Icon nhỏ cho toolbar</div>
+                <button class="download-btn" onclick="generateIcon(16)">Tải về 16x16</button>
+            </div>
+
+            <div class="icon-card">
+                <div class="icon-preview" id="icon32">
+                    🌌
+                </div>
+                <div class="icon-size">32x32</div>
+                <div class="icon-description">Icon trung bình</div>
+                <button class="download-btn" onclick="generateIcon(32)">Tải về 32x32</button>
+            </div>
+
+            <div class="icon-card">
+                <div class="icon-preview" id="icon48">
+                    🌌
+                </div>
+                <div class="icon-size">48x48</div>
+                <div class="icon-description">Icon extension manager</div>
+                <button class="download-btn" onclick="generateIcon(48)">Tải về 48x48</button>
+            </div>
+
+            <div class="icon-card">
+                <div class="icon-preview" id="icon128">
+                    🌌
+                </div>
+                <div class="icon-size">128x128</div>
+                <div class="icon-description">Icon Chrome Web Store</div>
+                <button class="download-btn" onclick="generateIcon(128)">Tải về 128x128</button>
+            </div>
+        </div>
+
+        <div class="instructions">
+            <h3>📖 Hướng dẫn sử dụng</h3>
+            <ol>
+                <li>Nhấn vào nút "Tải về" tương ứng với kích thước icon bạn cần</li>
+                <li>Icon sẽ được tự động tạo và tải xuống máy tính</li>
+                <li>Đổi tên file thành: icon16.png, icon32.png, icon48.png, icon128.png</li>
+                <li>Copy các file icon vào thư mục <code>icons/</code> trong extension</li>
+                <li>Tất cả icon đều có thiết kế bokeh xanh phù hợp với theme</li>
+            </ol>
+        </div>
+
+        <div class="instructions">
+            <h3>🎨 Thiết kế Icon</h3>
+            <ul>
+                <li><strong>Màu chính:</strong> Gradient xanh từ #4a90e2 đến #7bb3f0</li>
+                <li><strong>Hiệu ứng:</strong> Bokeh animation với ánh sáng mờ</li>
+                <li><strong>Biểu tượng:</strong> 🌌 (galaxy/night sky) phù hợp với theme</li>
+                <li><strong>Định dạng:</strong> PNG với nền trong suốt</li>
+                <li><strong>Chất lượng:</strong> Crisp và rõ nét ở mọi kích thước</li>
+            </ul>
+        </div>
+
+        <div class="canvas-container">
+            <canvas id="iconCanvas"></canvas>
+        </div>
+
+        <div class="footer">
+            <p>🚀 <strong>Blue Dream Bokeh New Tab Theme</strong> - Created by XMP © 2025</p>
+            <p>GitHub: <a href="https://github.com/tuananh93cp/blue-dream-bokeh-new-tab-theme" style="color: #87CEEB;">tuananh93cp/blue-dream-bokeh-new-tab-theme</a></p>
+        </div>
+    </div>
+
+    <script>
+        function generateIcon(size) {
+            const canvas = document.getElementById('iconCanvas');
+            const ctx = canvas.getContext('2d');
+            
+            // Set canvas size
+            canvas.width = size;
+            canvas.height = size;
+            
+            // Create gradient background
+            const gradient = ctx.createLinearGradient(0, 0, size, size);
+            gradient.addColorStop(0, '#4a90e2');
+            gradient.addColorStop(1, '#7bb3f0');
+            
+            // Fill background
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, size, size);
+            
+            // Add bokeh circles
+            for (let i = 0; i < 8; i++) {
+                const x = Math.random() * size;
+                const y = Math.random() * size;
+                const radius = Math.random() * (size * 0.15) + (size * 0.05);
+                
+                const bokehGradient = ctx.createRadialGradient(x, y, 0, x, y, radius);
+                bokehGradient.addColorStop(0, 'rgba(255, 255, 255, 0.3)');
+                bokehGradient.addColorStop(1, 'rgba(255, 255, 255, 0)');
+                
+                ctx.fillStyle = bokehGradient;
+                ctx.beginPath();
+                ctx.arc(x, y, radius, 0, 2 * Math.PI);
+                ctx.fill();
+            }
+            
+            // Add center glow
+            const centerGradient = ctx.createRadialGradient(size/2, size/2, 0, size/2, size/2, size/3);
+            centerGradient.addColorStop(0, 'rgba(255, 255, 255, 0.2)');
+            centerGradient.addColorStop(1, 'rgba(255, 255, 255, 0)');
+            
+            ctx.fillStyle = centerGradient;
+            ctx.beginPath();
+            ctx.arc(size/2, size/2, size/3, 0, 2 * Math.PI);
+            ctx.fill();
+            
+            // Add subtle border
+            ctx.strokeStyle = 'rgba(255, 255, 255, 0.1)';
+            ctx.lineWidth = 1;
+            ctx.strokeRect(0, 0, size, size);
+            
+            // Download the icon
+            const link = document.createElement('a');
+            link.download = `icon${size}.png`;
+            link.href = canvas.toDataURL();
+            link.click();
+        }
+
+        // Add some interactive effects
+        document.querySelectorAll('.icon-preview').forEach(preview => {
+            preview.addEventListener('click', function() {
+                const size = this.id.replace('icon', '');
+                generateIcon(parseInt(size));
+            });
+        });
+    </script>
+</body>
+</html> 

@@ -1,0 +1,91 @@
+CHROME WEB STORE SUBMISSION INFORMATION
+========================================
+
+BASIC INFORMATION
+-----------------
+Extension Name: Blue Dream Bokeh New Tab Theme
+Short Description: Transform your new tab page with a beautiful blue bokeh background for a dreamy browsing experience.
+
+Detailed Description:
+Transform your browsing experience with Blue Dream Bokeh New Tab Theme! This beautiful extension replaces your default new tab page with a stunning blue bokeh background that creates a calming and visually appealing environment every time you open a new tab.
+
+✨ KEY FEATURES:
+• Beautiful Blue Bokeh Background - Immersive blue bokeh effect for a relaxing browsing experience
+• Real-time Clock Display - Always know the current time at a glance
+• Integrated Search Functionality - Quick Google search directly from your new tab
+• Responsive Design - Works perfectly on all screen sizes
+• Lightweight & Fast - Minimal resource usage for optimal performance
+• Privacy-focused - No data collection or tracking whatsoever
+
+🎯 PERFECT FOR:
+• Users who want a more beautiful and calming browsing experience
+• Anyone looking to replace the default boring new tab page
+• People who appreciate minimalist and elegant design
+• Users who value privacy and lightweight extensions
+
+🔒 PRIVACY FIRST:
+This extension does not collect, store, or share any personal data. It simply changes the appearance of your new tab page with a custom background image. No user information is transmitted or used for any purpose.
+
+🚀 EASY TO USE:
+Simply install the extension and enjoy your new beautiful new tab page immediately. No configuration required - it works right out of the box!
+
+Category: Productivity
+Language: English
+Version: 1.0.0
+
+SINGLE PURPOSE STATEMENT
+-------------------------
+"This extension serves a single purpose: to transform the user's new tab page with a beautiful blue bokeh background theme, providing a more visually appealing and calming browsing experience."
+
+PERMISSION JUSTIFICATIONS
+--------------------------
+1. "storage" permission:
+   Reason: "This permission is used to save user preferences and theme settings locally on the user's device. No data is transmitted to external servers."
+
+2. "chrome_url_overrides" permission:
+   Reason: "This permission is required to replace the default new tab page with our custom-designed page featuring the blue bokeh background theme."
+
+3. "tabs" permission:
+   Reason: "This permission is used only to create a new tab when user clicks the 'Preview' button in the extension popup. No tab data is read or monitored."
+
+DEVELOPER INFORMATION
+----------------------
+Developer Name: XMP
+Developer Email: lanhanh64529@gmail.com
+Developer Website: https://github.com/tuananh93cp/blue-dream-bokeh-new-tab-theme
+Support Email: lanhanh64529@gmail.com
+Privacy Policy URL: (Include link to hosted privacy policy)
+
+SCREENSHOTS NEEDED
+------------------
+1. New tab page with blue bokeh background (main screenshot)
+2. Extension popup showing information
+3. Search functionality demonstration
+4. Time display feature
+5. Responsive design on different screen sizes
+
+PROMOTIONAL IMAGES
+------------------
+- Small tile: 440x280 pixels
+- Large tile: 920x680 pixels
+- Marquee: 1400x560 pixels
+- Screenshot: 1280x800 pixels (recommended)
+
+STORE LISTING KEYWORDS
+----------------------
+new tab, theme, background, bokeh, blue, beautiful, elegant, minimalist, productivity, chrome theme, tab page, custom background, dreamy, relaxing, aesthetic
+
+SUPPORT INFORMATION
+-------------------
+Support URL: https://github.com/tuananh93cp/blue-dream-bokeh-new-tab-theme/issues
+Support Email: lanhanh64529@gmail.com
+
+ADDITIONAL NOTES
+----------------
+- Extension uses Manifest V3 (latest standard)
+- No external dependencies
+- Fully offline functionality
+- Compatible with Chrome 88+
+- Lightweight (under 1MB total size)
+- No background scripts running
+- Instant loading and rendering 

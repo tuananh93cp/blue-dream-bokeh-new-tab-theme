@@ -1,0 +1,68 @@
+PRIVACY POLICY - Blue Dream Bokeh New Tab Theme
+===============================================
+
+Last Updated: March 7, 2025
+
+OVERVIEW
+--------
+Blue Dream Bokeh New Tab Theme ("the Extension") is committed to protecting your privacy. This Privacy Policy explains how we handle information when you use our Chrome/Firefox extension.
+
+INFORMATION WE DO NOT COLLECT
+------------------------------
+• Personal Information: We do not collect, store, or transmit any personal information including names, email addresses, phone numbers, or any other personally identifiable information.
+
+• Browsing Data: We do not track, monitor, or collect your browsing history, search queries, or website visits.
+
+• User Activity: We do not monitor or record your activities within the extension or on any websites.
+
+• Location Data: We do not access or collect your location information.
+
+• Device Information: We do not collect information about your device, operating system, or browser.
+
+WHAT THE EXTENSION DOES
+-----------------------
+• Replaces your new tab page with a beautiful blue bokeh background
+• Displays current time on the new tab page
+• Provides a search box that redirects to Google search (standard web search)
+• Stores minimal local preferences using Chrome's storage API (only for theme settings)
+
+LOCAL STORAGE
+-------------
+The extension may use Chrome's local storage API to save your preferences (such as theme settings). This information:
+• Is stored locally on your device only
+• Is never transmitted to external servers
+• Can be cleared by uninstalling the extension
+
+THIRD-PARTY SERVICES
+--------------------
+• Search functionality redirects to Google.com - Google's privacy policy applies to search queries
+• No other third-party services are used
+
+DATA SHARING
+------------
+We do not share, sell, rent, or trade any information with third parties because we do not collect any information.
+
+PERMISSIONS USED
+----------------
+• "storage": Used only to save your local theme preferences
+• "chrome_url_overrides": Used to replace the new tab page with our custom design
+
+CHANGES TO THIS POLICY
+----------------------
+We may update this Privacy Policy from time to time. Any changes will be posted with a new "Last Updated" date.
+
+CONTACT INFORMATION
+-------------------
+If you have questions about this Privacy Policy, please contact:
+• Email: lanhanh64529@gmail.com
+• GitHub: https://github.com/tuananh93cp/blue-dream-bokeh-new-tab-theme
+
+COMPLIANCE
+----------
+This extension complies with:
+• Chrome Web Store Developer Program Policies
+• Firefox Add-on Policies
+• General Data Protection Regulation (GDPR)
+• California Consumer Privacy Act (CCPA)
+
+By using this extension, you agree to this Privacy Policy. 
